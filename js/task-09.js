@@ -19,6 +19,8 @@ const bgChangeColor = () => {
   // bgColor.style.backgroundColor = "red";
   bgColor.style.backgroundColor = getRandomHexColor();
   // console.log(getRandomHexColor());
+  const bgColorText = document.querySelector(".color");
+  bgColorText.textContent = bgColor.style.backgroundColor;
 };
 
 buttonChangeColor.addEventListener("click", bgChangeColor);
